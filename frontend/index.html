@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Two Numbers - Deployed on Vercel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Add Two Numbers</h1>
+        <p class="subtitle">Frontend (Vercel) + Backend (AWS)</p>
+
+        <div class="architecture">
+            <span class="label frontend-label">VERCEL</span>
+            <span class="arrow">→</span>
+            <span class="label backend-label">AWS</span>
+        </div>
+
+        <div class="form-group">
+            <label for="num1">First Number</label>
+            <input type="number" id="num1" placeholder="Enter first number">
+        </div>
+
+        <div class="form-group">
+            <label for="num2">Second Number</label>
+            <input type="number" id="num2" placeholder="Enter second number">
+        </div>
+
+        <button class="add-btn" onclick="addViaAPI()">Add Numbers</button>
+
+        <div class="result">
+            <p>Result: <span id="result">?</span></p>
+        </div>
+
+        <div class="status" id="status"></div>
+
+        <div class="notice api-info">
+            <p>Deployment Info</p>
+            <p>Frontend: Deployed on Vercel</p>
+            <p>Backend: Deployed on AWS</p>
+            <p>Connection: Cross-origin API call</p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
